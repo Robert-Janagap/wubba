@@ -1,0 +1,21 @@
+<form action="">
+    <div *ngIf="!editVisible"  class="form-group todo-input">
+      <input type="text" placeholder="Add Todo" [(ngModel)]="todo" name="todo">
+      <span class="flaticon-add pointer" (click)="onAddTodoClick()"></span>
+    </div>
+    <div *ngIf="editVisible" class="form-group todo-input"  >
+      <input type="text" placeholder="Add Todo" [(ngModel)]="updatedTodo" name="updatedTodo">
+      <input *ngIf="edited" type="text" placeholder="" [(ngModel)]="idTodo" name="idTodo">
+      <span class="flaticon-pen update" (click)="onUpdateTaskClick()"></span>
+    </div>
+  </form>
+  <div class="tasks">
+    <div class="tasks-item" *ngFor="let task of tasks">
+      <label for={{task.task_id}} class="tasks-title">
+        <input type="checkbox" id={{task.task_id}}>
+        <span>{{task.task}}</span>
+      </label>
+      <span class="flaticon-pen edit" (click)="onEditTaskClick(task.task, task.task_id)"></span>
+      <span class="flaticon-cross-out" (click)="onDeleteTaskClick(task.task_id)"></span>
+  </div>
+</div>

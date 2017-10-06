@@ -1,0 +1,95 @@
+<div class="banner cf">
+  <div class="container">
+    <div class="banner-container">
+      <div class="tagline">
+        <h2 class="tagline-header">
+          You'll regret doing nothing today
+        </h2>
+        <div class="tagline-subHeader">
+          More and more people using wubba, Try it and use it again the next day.
+        </div>
+      </div>
+      <form (submit)="onRegisterSubmit()" class="banner-form">
+        <flash-messages></flash-messages>
+        <div class="form-group">
+          <input type="text" [(ngModel)]="name" name="name" placeholder="Full Name">
+        </div>
+        <div class="form-group">
+            <input type="text" [(ngModel)]="email" name="email" placeholder="Email">
+          </div>
+        <div class="form-group">
+            <input type="password" [(ngModel)]="password" name="password" placeholder="Password">
+        </div>
+        <input type="submit" value="Sign-up now" class="btn btn-primary btn-lg">
+      </form>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row section" id="about">
+    <div class="row-content center">
+      <h3 class="row-header center"><div class="border">Its all about you</div></h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates quia, atque suscipit laudantium, consequuntur molestiae nisi eveniet repellendus illum quaerat odit. Saepe quos, quibusdam officia natus quia pariatur culpa, minus.</p>
+      <div class="btn btn-primary">get started</div>
+    </div>
+    <div class="row-image">
+      <img src="/assets/images/wubba-about.jpg" alt="">
+    </div>
+  </div>
+  <div class="row feature-section" id="features">
+    <div class="row-content">
+      <h3 class="row-header center"><div class="border">Features</div></h3>
+      <div class="features">
+        <div class="feature">
+          <span class="flaticon-time-management-1"></span>
+          <div class="feature-title">user friendly</div>
+          <p class="feature-content">repellendus illum quaerat odit. Saepe quos, quibusdam officia natus quia pariatur culpa, minus.</p>
+        </div>
+        <div class="feature">
+          <span class="flaticon-history-1"></span>
+          <div class="feature-title">work history</div>
+          <p class="feature-content">repellendus illum quaerat odit. Saepe quos, quibusdam officia natus quia pariatur culpa, minus.</p>
+        </div>
+        <div class="feature">
+          <span class="flaticon-bar-chart"></span>
+          <div class="feature-title">improve workflow</div>
+          <p class="feature-content">repellendus illum quaerat odit. Saepe quos, quibusdam officia natus quia pariatur culpa, minus.</p>
+        </div>
+        <div class="feature">
+          <span class="flaticon-planning"></span>
+          <div class="feature-title">effectiveness</div>
+          <p class="feature-content">repellendus illum quaerat odit. Saepe quos, quibusdam officia natus quia pariatur culpa, minus.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row section" id="tutorial">
+    <div class="row-image">
+      <img src="/assets/images/wubba-tutorial.jpg" alt="">
+    </div>
+    <div class="row-content center">
+        <h3 class="row-header center"><div class="border">how to become wubba master</div></h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates quia, atque suscipit laudantium, consequuntur molestiae nisi eveniet repellendus illum quaerat odit. Saepe quos, quibusdam officia natus quia pariatur culpa, minus.</p>
+        <div class="btn btn-primary">get started</div>
+      </div>
+  </div>
+  <div class="row" id="contact">
+    <div class="row-content">
+      <h3 class="row-header center"><div class="border">Show me what you got?</div></h3>
+      <form action="" class="contact-form">
+        <div class="form-group">
+          <label for="">Name</label>
+          <input type="text" placeholder="">
+        </div>
+        <div class="form-group">
+            <label for="">Email</label>
+            <input type="text" placeholder="">
+        </div>
+        <div class="form-group textarea">
+            <textarea name="" id="" cols="30" rows="10" placeholder="Your message"></textarea>
+        </div>
+        <input type="submit" value="submit" class="btn btn-primary btn-lg">
+      </form>
+    </div>
+  </div>
+</div>

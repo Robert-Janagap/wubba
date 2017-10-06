@@ -1,0 +1,18 @@
+<div class="container">
+  <h2 class="login-header">ready your teleportation gun</h2>
+  <div class="login-content">
+    <div class="login-image">
+      <img src="/assets/images/wubba.jpeg" alt="">
+    </div>
+    <form (submit)="onLoginSubmit()" class="login-form">
+      <flash-messages></flash-messages>
+      <div class="form-group">
+        <input type="text" [(ngModel)]="email" name="email" placeholder="email">
+      </div>
+      <div class="form-group">
+        <input type="password" [(ngModel)]="password" name="password" placeholder="Password">
+      </div>
+      <input type="submit" class="btn btn-primary" value="Login">
+    </form>
+  </div>
+</div>

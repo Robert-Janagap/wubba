@@ -1,0 +1,26 @@
+.login-form{
+    border: 1px solid #8e8e8e;
+    padding: 1rem;
+    border-radius: 2px;
+    background: #fff;
+    width: 30%;
+}
+.login-form input[type="submit"]{
+    width: 100%;
+}
+.login-header{
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.login-content{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5rem;
+}
+.login-image{
+    width: 40%;
+}
+.login-image img{
+    width: 100%;
+}

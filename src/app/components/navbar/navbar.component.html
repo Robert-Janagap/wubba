@@ -1,0 +1,33 @@
+<header class="main-headerContainer" *ngIf="!authService.loggedIn()">
+  <div class="container">
+      <nav class="main-header">
+        <a href="" class="logo" [routerLink]="['/']" [routerLinkActive]="['active']" [routerLinkActiveOptions]= "{exact:true}">
+          <span class="flaticon-yoga"></span>
+          <span class="logo-title">Wubba</span>
+        </a>
+        <div class="main-nav">
+          <ul>
+            <li><a href="#about">about</a></li>
+            <li><a href="#features">features</a></li>
+            <li><a href="#tutorial">tutorial</a></li>
+            <li><a href="#contact">contact</a></li>
+            <li [routerLinkActive]= "['active']" [routerLinkActiveOptions]= "{exact:true}"><a [routerLink]="['/login']">login</a></li>
+          </ul>
+          <ul >
+              
+          </ul>
+        </div>
+      </nav>
+  </div>
+</header>
+
+<header class="main-headerContainer main-dashboardHeaderContainer" *ngIf="authService.loggedIn()">
+  <nav class="main-header main-dashboardHeader">
+    <div></div>
+    <div class="main-nav">
+      <ul>
+          <li><a (click)="onLogOutClick()" href="#">Logout</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
